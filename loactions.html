@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food In - Locations</title>
+  <link rel="stylesheet" href="location.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header with background image and text overlay -->
+  <header class="location-header">
+    <img src="locationPhoto.avif" alt="Food Banner" class="header-image" />
+    <div class="header-text">
+      <h1>Find a <span class="brand">Food In</span> Restaurant<br />Near You</h1>
+    </div>
+  </header>
+
+  <!-- Location Dropdown and Outlet Display Section -->
+  <section class="location-container">
+    <label for="city" class="city-label">Select Your City:</label><br />
+    <select id="city" class="city-dropdown" onchange="showOutlets()">
+      <option value="">--Choose City--</option>
+      <option value="delhi">Delhi</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="pune">Pune</option>
+      <option value="bangalore">Bangalore</option>
+      <option value="hyderabad">Hyderabad</option>
+      <option value="chennai">Chennai</option>
+    </select>
+
+    <!-- Outlet list displayed dynamically -->
+    <div id="outlet-list" class="outlet-list"></div>
+  </section>
+
+  <!-- Script to dynamically show outlets -->
+  <script>
+    const outlets = {
+      delhi: ["Connaught Place", "Saket", "Karol Bagh", "Lajpat Nagar", "Dwarka", "Vasant Kunj"],
+      mumbai: ["Andheri West", "Bandra", "Powai", "Colaba", "Dadar"],
+      pune: ["Kothrud", "Viman Nagar", "Hinjewadi", "Baner", "Koregaon Park"],
+      bangalore: ["Whitefield", "Indiranagar", "Koramangala", "MG Road", "Jayanagar"],
+      hyderabad: ["Hitech City", "Banjara Hills", "Jubilee Hills", "Gachibowli", "Begumpet"],
+      chennai: ["T Nagar", "Velachery", "Adyar", "Anna Nagar", "OMR"]
+    };
+
+    function showOutlets() {
+      const city = document.getElementById("city").value;
+      const list = outlets[city] || [];
+      const outletList = document.getElementById("outlet-list");
+
+      outletList.innerHTML = list.length
+        ? `<ul>${list.map(outlet => `<li>${outlet}</li>`).join('')}</ul>`
+        : "<p class='no-outlets'>Please select a city to view outlets.</p>";
+    }
+  </script>
+</body>
+</html>

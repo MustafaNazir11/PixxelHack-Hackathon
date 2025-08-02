@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #1A1110;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.location-header {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.header-text {
+    text-align: center;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.header-text h1 {
+    font-size: 3.5em;
+    font-family: "Playwrite CU", cursive;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+.brand {
+    color: orangered;
+    font-weight: 800;
+}
+
+/* Location Container Section */
+.location-container {
+    width: 85%;
+    margin: 8% auto 5% auto;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.city-label {
+    font-size: 2.3em;
+    font-family: "Playwrite CU", cursive;
+    color: orangered;
+    display: block;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Dropdown Styling */
+.city-dropdown {
+    background-color: #312c2a;
+    border: 2px solid orangered;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2em;
+    font-family: "Lato", sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 300px;
+    text-transform: capitalize;
+}
+
+.city-dropdown:hover {
+    background-color: orangered;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+}
+
+.city-dropdown:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.3);
+}
+
+.city-dropdown option {
+    background-color: #312c2a;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+/* Outlet List Styling */
+.outlet-list {
+    margin-top: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outlet-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.outlet-list li {
+    background-color: #312c2a;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.outlet-list li:hover {
+    border: 2px solid orangered;
+    background-color: rgba(255, 69, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: rgba(255, 69, 0, 0.3) 0 8px 25px;
+}
+
+.outlet-list li:before {
+    content: '📍';
+    display: block;
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+}
+
+/* No outlets message */
+.no-outlets {
+    font-size: 1.5em;
+    color: #888;
+    font-style: italic;
+    padding: 3rem;
+    background-color: #312c2a;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1050px) {
+    .header-text h1 {
+        font-size: 3em;
+    }
+    
+    .outlet-list ul {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .location-container {
+        width: 90%;
+    }
+    
+    .header-text h1 {
+        font-size: 2.5em;
+    }
+    
+    .city-dropdown {
+        min-width: 250px;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .outlet-list ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    
+    .outlet-list li {
+        padding: 1.5rem 1rem;
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .header-text h1 {
+        font-size: 2em;
+        padding: 1rem;
+    }
+    
+    .city-label {
+        font-size: 1.8em;
+    }
+    
+    .city-dropdown {
+        min-width: 200px;
+        font-size: 1em;
+        padding: 0.7rem 1rem;
+    }
+    
+    .outlet-list ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .location-container {
+        margin: 6% auto 3% auto;
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .location-header {
+        height: 50vh;
+    }
+    
+    .header-text h1 {
+        font-size: 1.6em;
+    }
+    
+    .city-label {
+        font-size: 1.5em;
+        margin-bottom: 1.5rem;
+    }
+    
+    .city-dropdown {
+        min-width: 180px;
+        font-size: 0.9em;
+    }
+    
+    .outlet-list li {
+        padding: 1.2rem 0.8rem;
+        font-size: 1em;
+    }
+}

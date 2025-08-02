@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap');
 *{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     transition: all 0.5s linear;
     color: #fff;
-    text-transform: capitalize;
+    text-transform: capitalize;   
 }
 body{
     background-color: #1A1110;
@@ -14,7 +14,8 @@ body{
 header{
     position: relative;
     padding: 2em 0;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(img/bg.jpg);
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), 
+            url('https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -103,6 +104,7 @@ header{
 .heading_1{
     font-size: 2.3em;
 }
+
 .heading{
     font-size: 3.5em;
     padding: 1.5% 0;
@@ -111,6 +113,50 @@ header{
 .main_btn{
     display: flex;
 }
+/* Reset link styles inside buttons */
+.btn {
+  text-decoration: none;           /* Removes underline */
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;                         /* space between icon and text */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn1 {
+  background-color: #ff4000;       /* Bright orange */
+  color: white;
+}
+
+.btn1:hover {
+  background-color: #e63900;
+}
+
+.btn2 {
+  border: 2px solid #ff4000;
+  background-color: transparent;
+  color: #ff4000;
+}
+
+.btn2 i {
+  font-size: 1.2rem;
+}
+
+.btn2:hover {
+  background-color: #ff4000;
+  color: white;
+}
+
+.btn2:hover i {
+  color: white;
+}
+
 .btn1:hover{
     background-color: transparent;
 }
