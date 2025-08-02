@@ -4,8 +4,40 @@ body {
   background-color: #1a1110;
   color: #fff;
 }
+header{
+    position: relative;
+    padding: 2em 0;
+    height: 100vh;
+    overflow: hidden;
+}
 
-/* ========== Header Banner ========== */
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+    z-index: -1;
+}
+
 .category-banner {
   background-color: #000;
   padding: 2rem;

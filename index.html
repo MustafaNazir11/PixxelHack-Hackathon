@@ -11,6 +11,15 @@
 
 <body>
     <header id="home">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="video.mp4" type="video/mp4">
+                <!-- Fallback for browsers that don't support video -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
         <nav class="navbar">
             <div class="logo">
                 <img src="https://github.com/Qurat-ul-A/Restaurant-website/blob/main/img/log.png" alt="">
@@ -32,22 +41,19 @@
                 </div>
             </ul>
 
-
             <div class="nav_menu" id="menu_btn">
                 <i class="ri-menu-line"></i>
             </div>
         </nav>
-        <section class="main">
 
+        <section class="main">
             <h2 class="heading_1">welcome to fast food restaurant</h2>
             <h1 class="heading">enjoy your <br>delicious meal</h1>
             <div class="main_btn">
                 <a href="menu.html" class="btn btn1">Order Now!</a>
                 <a href="location.html" class="btn btn2"><i class="ri-map-pin-line"></i>View Locations</a>
-
             </div>
         </section>
-
     </header>
     <!-- ___________services -->
     <section class="sec services" id="services">
@@ -73,6 +79,91 @@
                 <img src="https://github.com/Qurat-ul-A/Restaurant-website/blob/main/img/pic3.png" alt="">
                 <h4>good quality</h4>
                 <p>not only fast for us quality is also number one</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Best Sellers Carousel------------------ -->
+    <section class="sec best_sellers">
+        <div class="head">
+            <h3 class="heading_1">our best sellers</h3>
+            <h1 class="heading">popular <span>food items</span> <br>everyone loves</h1>
+        </div>
+
+        <div class="carousel_container">
+            <div class="carousel_track">
+                <div class="carousel_item">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop"
+                        alt="Delicious Burger">
+                    <div class="carousel_item_overlay">
+                        <h4>Classic Burger</h4>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://plus.unsplash.com/premium_photo-1663858366999-aa1ce123a972?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29ybWV0JTIwcGl6emF8ZW58MHx8MHx8fDA%3D"
+                        alt="Pizza">
+                    <div class="carousel_item_overlay">
+                        <h4>Pizzas</h4>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://plus.unsplash.com/premium_photo-1661730329741-b3bf77019b39?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGFjb3N8ZW58MHx8MHx8fDA%3D"
+                        alt="Tacos">
+                    <div class="carousel_item_overlay">
+                        <h4>Spicy Tacos</h4>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9hZGVkJTIwZnJpZXN8ZW58MHx8MHx8fDA%3D"
+                        alt="Fries">
+                    <div class="carousel_item_overlay">
+                        <h4>Loaded Fries</h4>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://plus.unsplash.com/premium_photo-1677000666761-ff476a65c8ba?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Sandwich">
+                    <div class="carousel_item_overlay">
+                        <h4>Saucy Pastas</h4>
+                    </div>
+                </div>
+                <!-- Duplicate items for seamless loop -->
+                <div class="carousel_item">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop"
+                        alt="Delicious Burger">
+                    <div class="carousel_item_overlay">
+                        <h4>Classic Burger</h4>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://plus.unsplash.com/premium_photo-1663858366999-aa1ce123a972?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29ybWV0JTIwcGl6emF8ZW58MHx8MHx8fDA%3D"
+                        alt="Pizza">
+                    <div class="carousel_item_overlay">
+                        <h4>Pizzas</h4>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=400&h=300&fit=crop"
+                        alt="Tacos">
+                    <div class="carousel_item_overlay">
+                        <h4>Spicy Tacos</h4>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&h=300&fit=crop"
+                        alt="Fries">
+                    <div class="carousel_item_overlay">
+                        <h4>Loaded Fries</h4>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&h=300&fit=crop"
+                        alt="Sandwich">
+                    <div class="carousel_item_overlay">
+                        <h4>Grilled Sandwich</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -168,7 +259,7 @@
 
         </div>
         <div class="footer_bar">
-            copyright @ 2024 Anna Coding Corner. All right reserved.
+            copyright @ 2025. All right reserved.
         </div>
     </footer>
     <span class="top" id="to-top"><i class="ri-arrow-up-circle-line"></i></span>
