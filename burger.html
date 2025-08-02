@@ -5,16 +5,257 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Burger Menu</title>
   <link rel="stylesheet" href="burger.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-  <section class="category-banner">
-    <h1>Burger Menu</h1>
-  </section>
 
-  <section class="product-list" id="productList">
-    <!-- Content gets injected from JS -->
-  </section>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="back-button">
+        <a href="menu.html" class="btn back-btn">
+          <i class="ri-arrow-left-line"></i> Back to Menu
+        </a>
+      </div>
+    </nav>
+    <div class="menu-hero">
+      <h2 class="heading_1">our signature burgers</h2>
+      <h1 class="heading">juicy <span>burger collection</span></h1>
+    </div>
+  </header>
 
-  <script src="burger.js"></script>
+  <!-- Burger Menu -->
+  <main class="burger-container">
+    
+    <!-- Classic Beef Burger -->
+    <div class="burger-item">
+      <div class="burger-image">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=400&fit=crop" alt="Classic Beef Burger">
+        <div class="price-tag">$12.99</div>
+      </div>
+      <div class="burger-info">
+        <h3>Classic Beef Burger</h3>
+        <div class="description">
+          <p>Juicy beef patty grilled to perfection with fresh lettuce, ripe tomatoes, pickles, onions, and our signature sauce on a toasted sesame bun.</p>
+        </div>
+        <div class="nutrition-info">
+          <div class="nutrition-item">
+            <span class="nutrition-label">Calories:</span>
+            <span class="nutrition-value">580</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Protein:</span>
+            <span class="nutrition-value">32g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Carbs:</span>
+            <span class="nutrition-value">45g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Fat:</span>
+            <span class="nutrition-value">28g</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Crispy Chicken Burger -->
+    <div class="burger-item">
+      <div class="burger-image">
+        <img src="https://images.unsplash.com/photo-1606755962773-d324e608eced?w=500&h=400&fit=crop" alt="Crispy Chicken Burger">
+        <div class="price-tag">$11.99</div>
+      </div>
+      <div class="burger-info">
+        <h3>Crispy Chicken Burger</h3>
+        <div class="description">
+          <p>Golden crispy fried chicken breast with creamy mayo, fresh lettuce, tomatoes, and spicy jalapeños on a brioche bun.</p>
+        </div>
+        <div class="nutrition-info">
+          <div class="nutrition-item">
+            <span class="nutrition-label">Calories:</span>
+            <span class="nutrition-value">620</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Protein:</span>
+            <span class="nutrition-value">35g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Carbs:</span>
+            <span class="nutrition-value">42g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Fat:</span>
+            <span class="nutrition-value">32g</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BBQ Bacon Burger -->
+    <div class="burger-item">
+      <div class="burger-image">
+        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?w=500&h=400&fit=crop" alt="BBQ Bacon Burger">
+        <div class="price-tag">$14.99</div>
+      </div>
+      <div class="burger-info">
+        <h3>BBQ Bacon Burger</h3>
+        <div class="description">
+          <p>Smoky beef patty topped with crispy bacon, caramelized onions, cheddar cheese, and tangy BBQ sauce on a toasted potato bun.</p>
+        </div>
+        <div class="nutrition-info">
+          <div class="nutrition-item">
+            <span class="nutrition-label">Calories:</span>
+            <span class="nutrition-value">720</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Protein:</span>
+            <span class="nutrition-value">38g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Carbs:</span>
+            <span class="nutrition-value">48g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Fat:</span>
+            <span class="nutrition-value">42g</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Veggie Delight Burger -->
+    <div class="burger-item">
+      <div class="burger-image">
+        <img src="https://images.unsplash.com/photo-1525059696034-4967a729002e?w=500&h=400&fit=crop" alt="Veggie Delight Burger">
+        <div class="price-tag">$10.99</div>
+      </div>
+      <div class="burger-info">
+        <h3>Veggie Delight Burger</h3>
+        <div class="description">
+          <p>Plant-based patty made with black beans and quinoa, topped with avocado, sprouts, cucumber, and herb aioli on a whole wheat bun.</p>
+        </div>
+        <div class="nutrition-info">
+          <div class="nutrition-item">
+            <span class="nutrition-label">Calories:</span>
+            <span class="nutrition-value">420</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Protein:</span>
+            <span class="nutrition-value">18g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Carbs:</span>
+            <span class="nutrition-value">52g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Fat:</span>
+            <span class="nutrition-value">16g</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spicy Jalapeño Burger -->
+    <div class="burger-item">
+      <div class="burger-image">
+        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&h=400&fit=crop" alt="Spicy Jalapeño Burger">
+        <div class="price-tag">$13.99</div>
+      </div>
+      <div class="burger-info">
+        <h3>Spicy Jalapeño Burger</h3>
+        <div class="description">
+          <p>Flame-grilled beef patty with pepper jack cheese, fresh jalapeños, spicy chipotle mayo, lettuce, and tomatoes on a jalapeño-cheddar bun.</p>
+        </div>
+        <div class="nutrition-info">
+          <div class="nutrition-item">
+            <span class="nutrition-label">Calories:</span>
+            <span class="nutrition-value">650</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Protein:</span>
+            <span class="nutrition-value">34g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Carbs:</span>
+            <span class="nutrition-value">46g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Fat:</span>
+            <span class="nutrition-value">36g</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Double Cheese Burger -->
+    <div class="burger-item">
+      <div class="burger-image">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&h=400&fit=crop" alt="Double Cheese Burger">
+        <div class="price-tag">$15.99</div>
+      </div>
+      <div class="burger-info">
+        <h3>Double Cheese Burger</h3>
+        <div class="description">
+          <p>Two juicy beef patties with double American cheese, special sauce, lettuce, pickles, and onions on a classic sesame seed bun.</p>
+        </div>
+        <div class="nutrition-info">
+          <div class="nutrition-item">
+            <span class="nutrition-label">Calories:</span>
+            <span class="nutrition-value">820</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Protein:</span>
+            <span class="nutrition-value">48g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Carbs:</span>
+            <span class="nutrition-value">52g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrition-label">Fat:</span>
+            <span class="nutrition-value">48g</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // Enhanced hover effects for mobile
+    if (window.innerWidth <= 850) {
+        document.querySelectorAll('.burger-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('mobile-active');
+            });
+        });
+    }
+
+    // Smooth animations on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe all menu items for scroll animations
+    document.querySelectorAll('.burger-item').forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(item);
+    });
+  </script>
+
 </body>
 </html>
