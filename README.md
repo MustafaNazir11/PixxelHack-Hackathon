@@ -26,3 +26,13 @@ HTML5
 CSS3 
 
 JavaScript
+
+
+✅ Elements Used:
+1. Loader Page
+2. Image Hover
+3. Image Grid
+4. Navigation Bar
+5. Infinite Marquee
+6. Team Section(Instead of Team Section we have shown a reviews section with the same hover affect)
+7. Text Animation
