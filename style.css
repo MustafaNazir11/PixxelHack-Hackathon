@@ -167,7 +167,7 @@ section {
 }
 .main {
     color: #ffffff;
-    text-shadow: 2px 2px 9px rgba(0,0,0,1);
+    text-shadow: 2px 2px 9px rgba(0,0,0,);
 }
 .btn1 {
   background-color: #ff4000;       /* Bright orange */
@@ -600,4 +600,63 @@ section {
 .footer_container{
     grid-template-columns: repeat(3,1fr);
 }
+}
+/* Split text animation - you'll need to wrap each letter in a span */
+.main .heading_1 {
+    opacity: 1;
+}
+
+.main .heading_1 span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: letterDrop 0.6s ease-out forwards;
+}
+
+/* Add delay for each letter */
+.main .heading_1 span:nth-child(1) { animation-delay: 0.1s; }
+.main .heading_1 span:nth-child(2) { animation-delay: 0.2s; }
+.main .heading_1 span:nth-child(3) { animation-delay: 0.3s; }
+/* Continue for each letter... */
+
+@keyframes letterDrop {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gradient text reveal for main heading */
+.main .heading {
+    background: linear-gradient(135deg, #fff 0%, orangered 50%, #fff 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: gradientReveal 3s ease-out 2s forwards;
+}
+
+@keyframes gradientReveal {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        background-position: -200% 0%;
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+        background-position: 200% 0%;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        background-position: 0% 0%;
+        -webkit-text-fill-color: #fff;
+    }
 }
