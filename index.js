@@ -1,4 +1,3 @@
-// Mobile menu toggle
 const menuBtn = document.getElementById('menu_btn');
 const navLinks = document.getElementById('nav_links');
 
@@ -6,14 +5,12 @@ menuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('open');
 });
 
-// Close menu when clicking on a link (optional)
 document.querySelectorAll('.nav_items a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
     });
 });
 
-// Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -23,7 +20,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Scroll to top functionality
 const scrollToTop = document.getElementById('to-top');
 
 window.addEventListener('scroll', () => {
@@ -41,7 +37,6 @@ scrollToTop.addEventListener('click', () => {
     });
 });
 
-// Smooth scroll to bestsellers section
 function scrollToBestsellers() {
     document.getElementById('bestsellers').scrollIntoView({
         behavior: 'smooth',
@@ -49,13 +44,12 @@ function scrollToBestsellers() {
     });
 }
 
-// Enhanced carousel with manual controls
 let currentSlide = 0;
-const totalSlides = document.querySelectorAll('.carousel_item').length / 2; // Divide by 2 due to duplicates
+const totalSlides = document.querySelectorAll('.carousel_item').length / 2;
 
 function moveCarousel(direction) {
     const track = document.getElementById('carouselTrack');
-    const itemWidth = document.querySelector('.carousel_item').offsetWidth + 20; // Including gap
+    const itemWidth = document.querySelector('.carousel_item').offsetWidth + 20;
     
     currentSlide += direction;
     
@@ -65,7 +59,6 @@ function moveCarousel(direction) {
     track.style.transform = `translateX(-${currentSlide * itemWidth}px)`;
 }
 
-// Interactive food item details
 function showItemDetails(name, description, price) {
     const modal = document.createElement('div');
     modal.className = 'food-modal';
@@ -81,7 +74,6 @@ function showItemDetails(name, description, price) {
     document.body.appendChild(modal);
 }
 
-// Navbar scroll effect
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -91,7 +83,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Animate service boxes on scroll
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
