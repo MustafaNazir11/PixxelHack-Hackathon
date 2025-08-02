@@ -7,7 +7,40 @@
     color: #fff;
     text-transform: capitalize;
 }
+/* Homepage Button */
+.homepage-btn {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    background: linear-gradient(45deg, orangered, #ff6b35);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: rgba(255, 69, 0, 0.3) 0 4px 15px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-transform: none;
+}
 
+.homepage-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(255, 69, 0, 0.4) 0 6px 20px;
+    background: linear-gradient(45deg, #ff6b35, orangered);
+}
+
+.homepage-btn i {
+    font-size: 1.2rem;
+    color: white;
+}
 body {
     background-color: #1A1110;
     font-family: "Lato", sans-serif;
@@ -198,6 +231,12 @@ body {
         font-size: 2em;
         padding: 1rem;
     }
+    .homepage-btn {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+}
     
     .city-label {
         font-size: 1.8em;
@@ -227,6 +266,15 @@ body {
     .header-text h1 {
         font-size: 1.6em;
     }
+
+    .homepage-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+.homepage-btn span {
+    display: none;
+}
     
     .city-label {
         font-size: 1.5em;

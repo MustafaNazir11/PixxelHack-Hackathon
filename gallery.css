@@ -140,7 +140,40 @@ body {
 .gallery-item:hover img {
     transform: scale(1.1);
 }
+/* Homepage Button */
+.homepage-btn {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    background: linear-gradient(45deg, orangered, #ff6b35);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: rgba(255, 69, 0, 0.3) 0 4px 15px;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    text-transform: none;
+}
 
+.homepage-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(255, 69, 0, 0.4) 0 6px 20px;
+    background: linear-gradient(45deg, #ff6b35, orangered);
+}
+
+.homepage-btn i {
+    font-size: 1.2rem;
+    color: white;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -313,7 +346,12 @@ body {
     .gallery-header {
         height: 60vh;
     }
-    
+    .homepage-btn {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+}
     .heading {
         font-size: 2em;
     }
@@ -353,6 +391,14 @@ body {
     .gallery-header {
         height: 50vh;
     }
+    .homepage-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+.homepage-btn span {
+    display: none;
+}
     
     .heading {
         font-size: 1.8em;
