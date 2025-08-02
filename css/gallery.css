@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header Section */
+
 .gallery-header {
     position: relative;
     height: 70vh;
@@ -63,7 +63,7 @@ body {
     text-transform: lowercase;
 }
 
-/* Gallery Navigation */
+
 .gallery-nav {
     background-color: #312c2a;
     padding: 3rem 0;
@@ -102,7 +102,7 @@ body {
     box-shadow: rgba(255, 69, 0, 0.3) 0 8px 25px;
 }
 
-/* Gallery Section */
+
 .gallery-section {
     padding: 8% 0;
     width: 85%;
@@ -140,7 +140,7 @@ body {
 .gallery-item:hover img {
     transform: scale(1.1);
 }
-/* Homepage Button */
+
 .homepage-btn {
     position: fixed;
     top: 2rem;
@@ -219,7 +219,7 @@ body {
     margin-top: auto;
 }
 
-/* Modal Styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -271,7 +271,7 @@ body {
     margin: 0 auto;
 }
 
-/* Scroll to Top Button */
+
 .top {
     background-color: orangered;
     font-size: 40px;
@@ -294,7 +294,7 @@ body {
     bottom: 8%;
 }
 
-/* Responsive Design */
+
 @media only screen and (max-width: 1050px) {
     .gallery-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

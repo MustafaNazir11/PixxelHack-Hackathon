@@ -1,4 +1,4 @@
-// menu.js
+
 const menuData = {
   burger: [
     { name: "Cheese Burger", price: "$5.99", desc: "Grilled patty with melted cheese", ingredients: "Beef, cheese, bun, lettuce, tomato" },

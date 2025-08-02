@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food In - Gallery</title>
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="../css/gallery.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap"
@@ -13,8 +13,7 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    <!-- Homepage Button -->
+
     <a href="index.html" class="homepage-btn">
         <i class="ri-home-line"></i>
         <span>back to home</span>
@@ -29,7 +28,7 @@
         </div>
     </header>
 
-    <!-- Gallery Navigation -->
+
     <section class="gallery-nav">
         <div class="nav-container">
             <button class="filter-btn active" data-filter="all">all</button>
@@ -39,11 +38,10 @@
         </div>
     </section>
 
-    <!-- Gallery Grid -->
+
     <section class="gallery-section">
         <div class="gallery-container">
 
-            <!-- Food Images -->
             <div class="gallery-item food" data-category="food">
                 <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80"
                     alt="Delicious Burger">
@@ -103,8 +101,6 @@
                     <i class="ri-zoom-in-line"></i>
                 </div>
             </div>
-
-            <!-- Restaurant Interior Images -->
             <div class="gallery-item restaurant" data-category="restaurant">
                 <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
                     alt="Restaurant Interior">
@@ -135,7 +131,7 @@
                 </div>
             </div>
 
-            <!-- Vibe/Ambiance Images -->
+
             <div class="gallery-item vibe" data-category="vibe">
                 <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=800&q=80"
                     alt="Evening Ambiance">
@@ -179,26 +175,25 @@
         </div>
     </section>
 
-    <!-- Image Modal -->
+
     <div class="modal" id="imageModal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImage">
         <div class="modal-caption" id="caption"></div>
     </div>
 
-    <!-- Back to Top Button -->
     <span class="top" id="to-top"><i class="ri-arrow-up-circle-line"></i></span>
 
     <script>
-        // Filter functionality
+
         const filterBtns = document.querySelectorAll('.filter-btn');
         const galleryItems = document.querySelectorAll('.gallery-item');
 
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Remove active class from all buttons
+                
                 filterBtns.forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
+                
                 btn.classList.add('active');
 
                 const filter = btn.getAttribute('data-filter');
@@ -221,7 +216,7 @@
             });
         });
 
-        // Modal functionality
+
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
         const caption = document.getElementById('caption');
@@ -238,14 +233,12 @@
             modal.style.display = 'none';
         }
 
-        // Close modal when clicking outside
         window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = 'none';
             }
         }
 
-        // Scroll to top functionality
         const topBtn = document.getElementById('to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {

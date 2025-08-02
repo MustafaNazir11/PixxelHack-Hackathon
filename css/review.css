@@ -14,8 +14,8 @@ body {
     line-height: 1.6;
 }
 
-/* Header Section */
-/* Homepage Button */
+
+
 .homepage-btn {
     position: fixed;
     top: 2rem;
@@ -97,7 +97,7 @@ body {
     text-transform: lowercase;
 }
 
-/* Reviews Section */
+
 .reviews-section {
     padding: 8% 0;
     width: 85%;
@@ -126,7 +126,7 @@ body {
     box-shadow: rgba(255, 69, 0, 0.3) 0 15px 35px;
 }
 
-/* Reviewer Info */
+
 .reviewer-info {
     display: flex;
     align-items: center;
@@ -223,7 +223,7 @@ body {
     font-size: 0.9em;
 }
 
-/* Review Content */
+
 .review-content {
     margin-top: 1.5rem;
 }
@@ -258,7 +258,7 @@ body {
     box-shadow: rgba(255, 69, 0, 0.3) 0 8px 20px;
 }
 
-/* Statistics Section */
+
 .stats-section {
     background-color: #312c2a;
     padding: 5% 0;
@@ -298,7 +298,7 @@ body {
     font-size: 1.5em;
 }
 
-/* Scroll to Top Button */
+
 .top {
     background-color: orangered;
     font-size: 40px;
@@ -321,7 +321,7 @@ body {
     bottom: 8%;
 }
 
-/* Responsive Design */
+
 @media only screen and (max-width: 1050px) {
     .reviews-container {
         grid-template-columns: 1fr;

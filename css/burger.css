@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-/* ========== Header & Navigation ========== */
+
 header {
     position: relative;
     padding: 2em 0;
@@ -60,7 +60,7 @@ header {
     font-size: 1.2rem;
 }
 
-/* ========== Menu Hero Section ========== */
+
 .menu-hero {
     text-align: center;
     padding: 4rem 0;
@@ -87,7 +87,7 @@ header {
     color: orangered;
 }
 
-/* ========== Burger Container ========== */
+
 .burger-container {
     width: 85%;
     margin: auto;
@@ -97,7 +97,7 @@ header {
     gap: 3rem;
 }
 
-/* ========== Burger Items ========== */
+
 .burger-item {
     display: flex;
     background-color: #2a2520;
@@ -114,7 +114,7 @@ header {
     box-shadow: rgba(0,0,0,2) 0 8px 25px;
 }
 
-/* ========== Burger Image ========== */
+
 .burger-image {
     flex: 1;
     position: relative;
@@ -144,7 +144,7 @@ header {
     box-shadow: rgba(0,0,0,0.3) 0 2px 8px;
 }
 
-/* ========== Burger Info ========== */
+
 .burger-info {
     flex: 1;
     padding: 2rem;
@@ -162,7 +162,7 @@ header {
     font-family: "Lato", sans-serif;
 }
 
-/* ========== Description & Nutrition Toggle ========== */
+
 .description {
     opacity: 1;
     transform: translateY(0);
@@ -198,7 +198,7 @@ header {
     text-transform: none;
 }
 
-/* ========== Nutrition Info Styling ========== */
+
 .nutrition-item {
     display: flex;
     justify-content: space-between;
@@ -226,7 +226,7 @@ header {
     font-size: 1rem;
 }
 
-/* ========== Order Button ========== */
+
 .order-btn {
     padding: 12px 24px;
     font-size: 1rem;
@@ -249,7 +249,7 @@ header {
     box-shadow: rgba(255,69,0,0.4) 0 4px 15px;
 }
 
-/* ========== Responsive Design ========== */
+
 @media only screen and (max-width: 1050px) {
     .heading {
         font-size: 2.5em;

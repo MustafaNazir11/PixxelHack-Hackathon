@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
 }
 
-/* ========== Header & Navigation ========== */
+
 header {
     position: relative;
     padding: 2em 0;
@@ -62,7 +62,7 @@ header {
     font-size: 1.2rem;
 }
 
-/* ========== Menu Hero Section ========== */
+
 .menu-hero {
     text-align: center;
     padding: 4rem 0;
@@ -89,7 +89,7 @@ header {
     color: orangered;
 }
 
-/* ========== Category Grid ========== */
+
 main.category-container {
     width: 85%;
     margin: auto;
@@ -99,7 +99,7 @@ main.category-container {
     gap: 2rem;
 }
 
-/* ========== Category Cards ========== */
+
 .category-card {
     position: relative;
     overflow: hidden;
@@ -150,7 +150,7 @@ main.category-container {
     padding: 30px 20px;
 }
 
-/* ========== Responsive Design ========== */
+
 @media only screen and (max-width: 1050px) {
     .heading {
         font-size: 2.5em;
@@ -236,7 +236,7 @@ main.category-container {
     }
 }
 
-/* ========== Animation Effects ========== */
+
 .category-card {
     opacity: 0;
     transform: translateY(50px);
@@ -261,7 +261,7 @@ main.category-container {
     }
 }
 
-/* Main heading gradient animation */
+
 .menu-hero .heading {
     background: linear-gradient(135deg, #fff 0%, orangered 50%, #fff 100%);
     background-size: 200% 200%;
@@ -292,7 +292,7 @@ main.category-container {
     }
 }
 
-/* Heading_1 letter drop animation */
+
 .menu-hero .heading_1 {
     opacity: 1;
 }

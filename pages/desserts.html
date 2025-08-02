@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Desserts Menu</title>
-  <link rel="stylesheet" href="burger.css" />
+  <link rel="stylesheet" href="../css/burger.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- Header -->
+
   <header>
     <nav class="navbar">
       <div class="back-button">
@@ -24,10 +24,11 @@
     </div>
   </header>
 
-  <!-- Desserts Menu -->
+
   <main class="burger-container">
     
-    <!-- Chocolate Lava Cake -->
+
+    
     <div class="burger-item">
       <div class="burger-image">
         <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&h=400&fit=crop" alt="Chocolate Lava Cake">
@@ -59,7 +60,7 @@
       </div>
     </div>
 
-    <!-- Cheesecake -->
+  
     <div class="burger-item">
       <div class="burger-image">
         <img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZXNlJTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="New York Cheesecake">
@@ -91,7 +92,7 @@
       </div>
     </div>
 
-    <!-- Tiramisu -->
+
     <div class="burger-item">
       <div class="burger-image">
         <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&h=400&fit=crop" alt="Tiramisu">
@@ -123,7 +124,6 @@
       </div>
     </div>
 
-    <!-- Apple Pie -->
     <div class="burger-item">
       <div class="burger-image">
         <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=500&h=400&fit=crop" alt="Apple Pie">
@@ -155,7 +155,7 @@
       </div>
     </div>
 
-    <!-- Ice Cream Sundae -->
+
     <div class="burger-item">
       <div class="burger-image">
         <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&h=400&fit=crop" alt="Ice Cream Sundae">
@@ -187,7 +187,7 @@
       </div>
     </div>
 
-    <!-- Crème Brûlée -->
+
     <div class="burger-item">
       <div class="burger-image">
         <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500&h=400&fit=crop" alt="Crème Brûlée">
@@ -219,7 +219,7 @@
       </div>
     </div>
 
-    <!-- Chocolate Brownies -->
+
     <div class="burger-item">
       <div class="burger-image">
         <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&h=400&fit=crop" alt="Chocolate Brownies">
@@ -251,7 +251,9 @@
       </div>
     </div>
 
-    <!-- Strawberry Shortcake -->
+
+
+
     <div class="burger-item">
       <div class="burger-image">
         <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&h=400&fit=crop" alt="Strawberry Shortcake">
@@ -286,7 +288,8 @@
   </main>
 
   <script>
-    // Enhanced hover effects for mobile
+
+
     if (window.innerWidth <= 850) {
         document.querySelectorAll('.burger-item').forEach(item => {
             item.addEventListener('click', function() {
@@ -295,7 +298,7 @@
         });
     }
 
-    // Smooth animations on scroll
+    
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -310,7 +313,7 @@
         });
     }, observerOptions);
 
-    // Observe all menu items for scroll animations
+
     document.querySelectorAll('.burger-item').forEach(item => {
         item.style.opacity = '0';
         item.style.transform = 'translateY(20px)';

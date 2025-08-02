@@ -4,18 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Food In - Locations</title>
-  <link rel="stylesheet" href="location.css" />
+  <link rel="stylesheet" href="../css/location.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Homepage Button -->
+  
 <a href="index.html" class="homepage-btn">
     <i class="ri-home-line"></i>
     <span>back to home</span>
 </a>
-  <!-- Header with background image and text overlay -->
+  
   <header class="location-header">
     <img src="locationPhoto.avif" alt="Food Banner" class="header-image" />
     <div class="header-text">
@@ -23,7 +23,7 @@
     </div>
   </header>
 
-  <!-- Location Dropdown and Outlet Display Section -->
+  
   <section class="location-container">
     <label for="city" class="city-label">Select Your City:</label><br />
     <select id="city" class="city-dropdown" onchange="showOutlets()">
@@ -36,11 +36,11 @@
       <option value="chennai">Chennai</option>
     </select>
 
-    <!-- Outlet list displayed dynamically -->
+    
     <div id="outlet-list" class="outlet-list"></div>
   </section>
 
-  <!-- Script to dynamically show outlets -->
+  
   <script>
     const outlets = {
       delhi: ["Connaught Place", "Saket", "Karol Bagh", "Lajpat Nagar", "Dwarka", "Vasant Kunj"],

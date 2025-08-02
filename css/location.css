@@ -7,7 +7,7 @@
     color: #fff;
     text-transform: capitalize;
 }
-/* Homepage Button */
+
 .homepage-btn {
     position: fixed;
     top: 2rem;
@@ -47,7 +47,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header Section */
+
 .location-header {
     position: relative;
     height: 90vh;
@@ -87,7 +87,7 @@ body {
     font-weight: 800;
 }
 
-/* Location Container Section */
+
 .location-container {
     width: 85%;
     margin: 8% auto 5% auto;
@@ -104,7 +104,7 @@ body {
     font-weight: 600;
 }
 
-/* Dropdown Styling */
+
 .city-dropdown {
     background-color: #312c2a;
     border: 2px solid orangered;
@@ -135,7 +135,7 @@ body {
     padding: 0.5rem;
 }
 
-/* Outlet List Styling */
+
 .outlet-list {
     margin-top: 4rem;
     max-width: 800px;
@@ -178,7 +178,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* No outlets message */
+
 .no-outlets {
     font-size: 1.5em;
     color: #888;
@@ -189,7 +189,7 @@ body {
     margin-top: 2rem;
 }
 
-/* Responsive Design */
+
 @media only screen and (max-width: 1050px) {
     .header-text h1 {
         font-size: 3em;
